@@ -34,12 +34,19 @@ Click "clear files" to delete old images. Then click take photo for 23 times as 
 
 Obtain Raspberry Pi MAC address:
 <br/>
+First turn on SSH:
+Type the following command in Raspberry Pi terminal
+```
+sudo raspi-config
+```
+Choose 'Interfacing options' and then click on 'P2 SSH' to enable SSH
+Then obtain IP dress:
 Type the following command in Raspberry Pi terminal
 ```
 ifconfig wlan0
 ```
-The IP address should be something like "192.168.1.10"<br/>
-The MAC address should be something like "fe80::5280:6726:a47d:f38c"
+The IP address should be something like "192.168.1.10"
+<br/>
 
 Install [WinSCP](https://winscp.net/eng/index.php)
 <br/>
